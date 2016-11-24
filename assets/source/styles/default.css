@@ -1,0 +1,75 @@
+/*
+* Дефолтные стили
+*/
+
+@charset 'UTF-8';
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-size-adjust: none;
+}
+
+/* Формы */
+
+input,
+textarea,
+button {
+	outline: none;
+	@mixin helvetica;
+}
+
+/* Аккуратные таблицы */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Без разрывов в многострочных ссылках */
+
+a {
+	padding-top: .2em;
+}
+body {
+	@mixin helvetica;
+	background-color: #fff;
+	font-size: 14px;
+	line-height: 120%;
+}
+main {
+	background-repeat: repeat-y;
+	background-size: cover;
+	@media(max-width: 590px) {
+		background-size: contain;
+	}
+}
+.music {
+	background-image: url(../img/pattern-music.jpg);
+}
+.stage {
+	background-image: url(../img/pattern-stage.jpg);
+}
+.storona {
+	background-image: url(../img/pattern-storona.jpg);
+}
+.item {
+	&--music {
+		.item__link,
+		.item__act:hover {
+			color: $c_lazur !important;
+		}
+	}
+	&--stage {
+		.item__act:hover,
+		.item__link {
+			color: $c_purpur !important;
+		}
+	}
+	&--storona {
+		.item__act:hover,
+		.item__link {
+			color: $c_okhra !important;
+		}
+	}
+}

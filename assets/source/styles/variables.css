@@ -1,0 +1,46 @@
+$f_Arial: Arial, sans-serif;
+
+@define-mixin georgia-bold {
+	font-family: 'Georgia';
+	font-weight: bold;
+	font-style: normal;
+}
+@define-mixin georgia-italic {
+	font-family: 'Georgia';
+	font-weight: normal;
+	font-style: italic;
+}
+@define-mixin georgia-bold-italic {
+	font-family: 'Georgia';
+	font-weight: bold;
+	font-style: italic;
+}
+@define-mixin georgia {
+	font-family: 'Georgia';
+	font-weight: normal;
+	font-style: normal;
+}
+@define-mixin helvetica-bold {
+	font-family: 'HelveticaNeueCyr';
+	font-weight: bold;
+	font-style: normal;
+}
+@define-mixin helvetica-medium {
+	font-family: 'HelveticaNeueCyr';
+	font-weight: 500;
+	font-style: normal;
+}
+@define-mixin helvetica-light {
+	font-family: 'HelveticaNeueCyr';
+	font-weight: 300;
+	font-style: normal;
+}
+@define-mixin helvetica {
+	font-family: 'HelveticaNeueCyr';
+	font-weight: normal;
+	font-style: normal;
+}
+
+$c_okhra: #A56300;
+$c_lazur: #006363;
+$c_purpur: #8C003D ;

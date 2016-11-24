@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Сторона</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="guide stage">
+  			<style>
+				xmp {
+					display: block;
+					border: 1px solid #ddd;
+					border-radius: 3px;
+					padding: 0.4rem 0.5rem;
+					font-size: 15px;
+					line-height: 18px;
+					white-space: pre-wrap;
+					word-break: break-word;
+					text-align: left;
+					margin-top: 15px;
+					margin-bottom: 20px;
+					margin-left: 50px;
+					margin-right: 50px;
+				}
+			</style>
+<div class="guide__header">
+	Стили для статьи
+</div>
+
+<main class="wrapper">
+
+<p class="guide">Каждый раздел сайта это <mark>block</mark>. Внутрь кладутся картинки, заголовки, текст. </p>
+<xmp><div class="block">
+ <p class="block__text">Текст</p>
+</div></xmp>
+
+<h1>Оформление</h1>
+
+<p class="guide">Добавляя определённые модификаторы к <mark>block</mark> можно изменять параметры:</p>
+
+<h2>Тип шрифта</h2>
+<p class="guide">К <mark>block</mark> добавляется класс <mark>block--helvetica</mark> или <mark>block--georgia</mark>.</p>
+<xmp><div class="block block--helvetica"></xmp>
+
+<h2>Рамки</h2>
+<ul>
+	<li><mark>block--top-half-border</mark> - рамка сверху не до конца </li>
+	<li><mark>block--top-border</mark> - рамка сверху</li>
+	<li><mark>block--bottom-border</mark> - рамка снизу</li>
+</ul>
+<xmp><div class="block block--top-border block--bottom-border"></xmp>
+
+<h2>Цвет фона</h2>
+
+<ul>
+	<li><mark>block--okhra</mark> </li>
+	<li><mark>block--lazur</mark></li>
+	<li><mark>block--purpur</mark></li>
+</ul>
+<xmp><div class="block block--georgia block--purpur"></xmp>
+
+<h1>Внутренние элементы</h1>
+
+<h2>Текст</h2>
+
+
+<xmp><p class="block__text">Текст</p></xmp>
+	
+	<h2>Ссылка</h2>
+	
+	<xmp><a href="ссылка" class="block__link">Ссылка</a></xmp>
+
+<h2>Картинка</h2>
+
+<xmp><div class="block__img-wrap">
+ <img src="assets/img/flamingo-small.jpg" alt="" class="block__img">
+</div></xmp>
+
+<h2>Картинка с затемнением и заголовком</h2>
+
+<xmp><div class="block__img-wrap block__img-wrap--fade">
+	<img src="ссылка на картинку" alt="" class="block__img--big">
+	<div class="block__img-heading">Заголовок</div>
+</div></xmp>
+<h1>Типы карточек</h1>
+
+<h2>Шапка статьи</h2>
+
+		<div class="block block--heading block--helvetica">
+		
+			<img src="assets/img/flamingo-small.jpg" alt="" class="block__img--big">
+			<div class="block__type">трекбайтрек</div>
+			<p class="block__text--big">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.</p>
+			<div class="block__social">
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+			</div>
+		</div>
+
+<p class="guide">Обязаельно <mark>block--heading</mark></p>
+<xmp><div class="block block--heading block--helvetica">
+		<img src="assets/img/flamingo-small.jpg" alt="" class="block__img--big">
+			<div class="block__type">Подрубрика</div>
+			<p class="block__text--big">Текст</p>
+			<div class="block__social">
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+				<a href="" class="social-link"></a>
+			</div>
+		</div>
+</xmp>
+
+		<h2>Georgia</h2>
+		
+				<div class="block block--georgia block--top-half-border">
+			<p class="block__text">
+				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
+			</p>
+		</div>
+		
+		<xmp><div class="block block--georgia block--top-half-border">
+			<p class="block__text">Текст</p>
+		</div></xmp>
+		
+		<h2>Helvetica</h2>
+	
+				<div class="block block--helvetica block--top-border block--bottom-border">
+			<p class="block__text">
+				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+			</p>
+		</div>
+		
+			<xmp><div class="block block--helvetica block--top-border block--bottom-border">
+			<p class="block__text">Текст</p>
+		</div></xmp>	
+		
+		<h2>Ссылка</h2>
+		
+		<p class="guide">Обязательно <mark>block--link</mark></p>
+		
+				<div class="block block--link">
+			<p class="block__text">Далеко-далеко за словесными горами </p>
+			<a href="ссылка" class="block__link">“в стране гласных и согласных”</a>
+		</div>
+		
+		<xmp><div class="block block--link">
+			<p class="block__text">Далеко-далеко за словесными горами </p>
+			<a href="" class="block__link">“в стране гласных и согласных”</a>
+		</div></xmp>
+		
+		<h2>Блок с одной фотографией</h2>
+		
+				<p class="guide">Обязательно <mark>block--image</mark></p>
+		
+				<div class="block block--image block--georgia block--okhra">
+			<div class="block__img-wrap">
+				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img">
+			</div>
+			<p class="block__text">
+				Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель
+			</p>
+		</div>
+		
+		<xmp><div class="block block--image block--georgia block--okhra">
+			<div class="block__img-wrap">
+				<img src="ссылка на картинку" alt="" class="block__img">
+			</div>
+			<p class="block__text">Текст</p>
+		</div></xmp>
+		
+		<h2>Блок с двумя фотографиями</h2>
+		
+		<p class="guide">Обязательно <mark>block--two-images</mark> для блока. Внутри <mark>block__right-text</mark> для текста справа</p>
+		
+				<div class="block block--two-images block--helvetica block--lazur">
+			<div class="block__img-wrap block__img-wrap--fade">
+				<img src="assets/img/flamingo.jpg" alt="" class="block__img">
+			</div>
+						<div class="block__img-wrap">
+				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img">
+			</div>
+			<div class="block__right-text">
+			<p class="block__text">Далеко-далеко</p>
+			<a href="" class="block__link">“в стране гласных и согласных”</a>
+		</div>	
+		</div>
+		
+	<xmp><div class="block block--two-images block--helvetica block--lazur">
+			<div class="block__img-wrap block__img-wrap--fade">
+				<img src="assets/img/flamingo.jpg" alt="" class="block__img">
+			</div>
+						<div class="block__img-wrap">
+				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img">
+			</div>
+			<div class="block__right-text">
+			<p class="block__text">Текст</p>
+			<a href="" class="block__link">Ссылка</a>
+		</div>	
+		</div></xmp>
+		
+				<h2>Блок с большой фотографией</h2>
+				
+				<p class="guide">Обязательно <mark>block--big-image</mark></p>
+				
+						<div class="block block--big-image block--georgia block--purpur">
+			<div class="block__img-wrap block__img-wrap--fade">
+				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img--big">
+				<div class="block__img-heading">Далеко-далеко за словесными горами
+				</div>
+			</div>
+			<p class="block__text">
+				Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель
+			</p>
+		</div>
+			
+			<xmp><div class="block block--big-image block--georgia block--purpur">
+			<div class="block__img-wrap block__img-wrap--fade">
+				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img--big">
+				<div class="block__img-heading">Заголовок</div>
+			</div>
+			<p class="block__text">Текст</p>
+		</div></xmp>
+				
+						<h2>Блок с плеером</h2>
+						
+						<p class="guide">Обязательно <mark>block--music</mark></p>
+						
+								<div class="block block--music block--georgia">
+			<p class="block__text">
+				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
+			</p>
+			<div class="music-plagin">
+						<img src="assets/img/flamingo.jpg" alt="">
+			</div>
+		</div>
+		
+		<xmp>		<div class="block block--music block--georgia">
+			<p class="block__text">Текст</p>
+			<div class="music-plagin">
+						<img src="assets/img/flamingo.jpg" alt="">
+			</div>
+		</div></xmp>
+	
+</main>
+
+
+  </body>
+</html>

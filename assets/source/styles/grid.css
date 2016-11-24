@@ -1,0 +1,36 @@
+header, main, .footer-container{
+	text-align: center;
+	max-width: 1560px;
+	margin: 0 auto;
+}
+
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.wrapper{
+	max-width: 1100px;
+	margin: 0 auto;
+	width: calc(75vw - 72px);
+	
+	@media(max-width: 590px){
+		width: calc(100% - 30px);
+	}
+	
+}
+
+.item{
+	float: left;
+  width: calc(25vw - 26px);
+	height: calc(25vw - 26px);
+	
+	
+	@media(max-width: 590px){
+		width: 100%;
+		height: auto;
+	}
+}
+
+

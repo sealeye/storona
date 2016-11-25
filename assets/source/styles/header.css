@@ -9,11 +9,11 @@ header {
 	.logo {
 		img {
 			margin-top: 20px;
-			
+
 		}
 		@media(max-width: 590px){
 			width: 50%;
-			
+
 			img{
 				width: 30%;
 			}
@@ -38,7 +38,7 @@ header {
 		.main-menu {
 			list-style: none;
 
-			&__item {
+			&__item, > .menu-item {
 				float: left;
 				width: 21vw;
 				border-top: 2px solid black;
@@ -48,23 +48,23 @@ header {
 				@media(max-width: 590px){
 					position: static;
 				}
-				
+
 				@media(max-width: 590px){
 					width: 31%;
 					margin-right: 3.5%;
 					padding-top: 7px;
 					padding-bottom: 10px;
-					
+
 					&:nth-of-type(4){
 						margin-right: 0;
 					}
-					
+
 					a{
 						font-size: 8px;
 						letter-spacing: 3px;
 					}
 				}
-				
+
 				&:hover .sub-menu {
 					display: block;
 				}
@@ -74,7 +74,7 @@ header {
 						display: none;
 					}
 				}
-				
+
 				&:last-child {
 					margin-right: 0;
 				}
@@ -120,7 +120,7 @@ header {
 					list-style: none;
 					width: 100%;
 					z-index: 100;
-					
+
 					@media(max-width: 590px){
 						width: 100vw;
 						    position: fixed;
@@ -131,11 +131,11 @@ header {
 						padding-top: 17px;
 						padding-bottom: 19px;
 						border-top: 2px solid black;
-						
+
 						&:hover{
 							border-top: 4px solid black;
 						}
-						
+
 						&:first-child {
 							border-top-width: 1px;
 						}

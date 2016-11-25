@@ -1,11 +1,13 @@
 footer {
 	background-color: #373a39;
 	padding-bottom: 40px;
-				@media(max-width: 590px){
-				padding-left: 16px;
-					padding-right: 16px;
-					padding-bottom: 15px;
-			}
+	position: relative;
+	z-index: 100;
+	@media(max-width: 590px) {
+		padding-left: 16px;
+		padding-right: 16px;
+		padding-bottom: 15px;
+	}
 	.zeens-heading {
 		display: block;
 		font-size: 14px;
@@ -15,9 +17,9 @@ footer {
 		color: #fff;
 		padding-top: 28px;
 		margin-bottom: 14px;
-					@media(max-width: 590px){
-				font-size: 10px;
-			}
+		@media(max-width: 590px) {
+			font-size: 10px;
+		}
 	}
 	.zeens-slider {
 		.slide {
@@ -26,7 +28,7 @@ footer {
 			&:last-child {
 				margin-right: 0;
 			}
-				@media(max-width: 590px){
+			@media(max-width: 590px) {
 				margin-right: 0;
 			}
 			img {}
@@ -49,60 +51,70 @@ footer {
 				&:last-child {
 					margin-right: 0;
 				}
-					@media(max-width: 590px){
-				margin-right: 20px;
-			}
+				@media(max-width: 590px) {
+					margin-right: 20px;
+				}
 				a {
 					color: #fff;
 					font-size: 18px;
 					text-transform: uppercase;
 					letter-spacing: 3px;
-						@media(max-width: 590px){
-				font-size: 10px;
-			}
+					@media(max-width: 590px) {
+						font-size: 10px;
+					}
 				}
 			}
 		}
 	}
 	.footer-row {
-			@media(max-width: 590px){
-				text-align: center;
-				display: flex;
-				flex-direction: column;
-			}
+		padding-top: 12px;
+		@media(max-width: 590px) {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+		}
 		.copyright {
 			text-align: left;
 			float: left;
-			width: 75%;
+			width: 70%;
 			color: #fff;
-			padding-top: 12px;
 			padding-left: 16px;
-			
-				@media(max-width: 590px){
+			@media(max-width: 590px) {
 				padding-left: 0;
-					width: 100%;
-					order: 2;
+				width: 100%;
+				order: 2;
 			}
-			
 			p {
 				margin-bottom: 10px;
-					@media(max-width: 590px){
-				font-size: 7px;
-						line-height: 9px;
-			}
+				@media(max-width: 590px) {
+					font-size: 7px;
+					line-height: 9px;
+				}
 			}
 		}
 		.social-block {
-			
-				@media(max-width: 590px){
+			@media(max-width: 590px) {
 				width: 100%;
-					order: 1;
+				order: 1;
 			}
-			
+			margin-top: 12px;
 			padding-right: 16px;
 			float: right;
-			width: 25%;
-			&__link {}
+			width: 30%;
+			&__link {
+				width: 40px;
+				height: 40px;
+				margin-left: 10px;
+				&:hover {
+					svg * {
+					fill: $c_lazur;
+					}
+				}
+				svg {
+					width: 40px;
+					height: 40px;
+				}
+			}
 		}
 	}
 }

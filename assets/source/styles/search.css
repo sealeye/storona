@@ -1,0 +1,15 @@
+.search-results{
+	h1{
+		text-align: left;
+		color: #000;
+		@mixin helvetica;
+		text-transform: uppercase;
+	}
+	section{
+		&:after{
+			content: '';
+			clear: both;
+			display: table;
+		}
+	}
+}

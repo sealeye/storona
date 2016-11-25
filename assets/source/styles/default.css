@@ -46,12 +46,21 @@ main {
 }
 .music {
 	background-image: url(../img/pattern-music.jpg);
+	.social-block__link:hover svg * {
+		fill: $c_lazur !important;
+	}
 }
 .stage {
 	background-image: url(../img/pattern-stage.jpg);
+	.social-block__link:hover svg * {
+		fill: $c_purpur !important;
+	}
 }
 .storona {
 	background-image: url(../img/pattern-storona.jpg);
+	.social-block__link:hover svg * {
+		fill: $c_okhra !important;
+	}
 }
 .item {
 	&--music {
@@ -71,5 +80,11 @@ main {
 		.item__link {
 			color: $c_okhra !important;
 		}
+	}
+}
+.home a {
+	&:hover,
+	&:hover svg * {
+		color: $c_purpur !important;
 	}
 }

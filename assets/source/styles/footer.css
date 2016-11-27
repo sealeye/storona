@@ -107,7 +107,7 @@ footer {
 				margin-left: 10px;
 				&:hover {
 					svg * {
-					fill: $c_lazur;
+						fill: $c_lazur;
 					}
 				}
 				svg {

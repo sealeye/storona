@@ -1,6 +1,6 @@
 main {
 	position: relative;
-	margin-top: 222px;
+	margin-top: 260px;
 	@media(max-width: 590px) {
 		margin-top: 162px;
 	}

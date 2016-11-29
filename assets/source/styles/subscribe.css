@@ -1,0 +1,24 @@
+.es_lablebox {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	text-transform: uppercase;
+	margin-left: 16px;
+}
+.es_textbox {
+	display: inline-block;
+	vertical-align: top;
+	input {
+		background-color: transparent;
+		border: none;
+		height: 30px;
+	}
+}
+.es_button {
+	display: inline-block;
+	vertical-align: top;
+	input {
+		height: 30px;
+		text-transform: uppercase;
+	}
+}

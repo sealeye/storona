@@ -4,6 +4,7 @@
 		color: #000;
 		@mixin helvetica;
 		text-transform: uppercase;
+		line-height: 40px;
 	}
 	section{
 		&:after{

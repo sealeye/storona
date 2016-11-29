@@ -46,20 +46,32 @@ main {
 }
 .music {
 	background-image: url(../img/pattern-music.jpg);
-	.social-block__link:hover svg * {
+	.social-block__link:hover svg *,
+	.social-link:hover svg * {
 		fill: $c_lazur !important;
+	}
+	.block--heading:after {
+		background-color: $c_lazur !important;
 	}
 }
 .stage {
 	background-image: url(../img/pattern-stage.jpg);
-	.social-block__link:hover svg * {
+	.social-block__link:hover svg *,
+	.social-link:hover svg * {
 		fill: $c_purpur !important;
+	}
+	.block--heading:after {
+		background-color: $c_purpur !important;
 	}
 }
 .storona {
 	background-image: url(../img/pattern-storona.jpg);
-	.social-block__link:hover svg * {
+	.social-block__link:hover svg *,
+	.social-link:hover svg * {
 		fill: $c_okhra !important;
+	}
+	.block--heading:after {
+		background-color: $c_okhra !important;
 	}
 }
 .item {

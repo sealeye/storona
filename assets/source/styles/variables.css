@@ -1,46 +1,10 @@
 $f_Arial: Arial, sans-serif;
 
-@define-mixin georgia-bold {
-	font-family: 'Georgia', Arial, sans-serif;
-	font-weight: bold;
-	font-style: normal;
-}
-@define-mixin georgia-italic {
-	font-family: 'Georgia', Arial, sans-serif;
-	font-weight: normal;
-	font-style: italic;
-}
-@define-mixin georgia-bold-italic {
-	font-family: 'Georgia', Arial, sans-serif;
-	font-weight: bold;
-	font-style: italic;
-}
-@define-mixin georgia {
-	font-family: 'Georgia', Arial, sans-serif;
-	font-weight: normal;
-	font-style: normal;
-}
-@define-mixin helvetica-bold {
-	font-family: 'HelveticaNeueCyr', Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-style: normal;
-}
-@define-mixin helvetica-medium {
-	font-family: 'HelveticaNeueCyr', Helvetica, Arial, sans-serif;
-	font-weight: 500;
-	font-style: normal;
-}
-@define-mixin helvetica-light {
-	font-family: 'HelveticaNeueCyr', Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-}
-@define-mixin helvetica {
-	font-family: 'HelveticaNeueCyr', Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	font-style: normal;
-}
+$circle:'Circe', Helvetica, Arial, sans-serif;
 
 $c_okhra: #A56300;
 $c_lazur: #006363;
-$c_purpur: #8C003D ;
+$c_purpur: #8C003D;
+
+@custom-media --tablet (width <= 780px);
+@custom-media --mobile (width <= 590px);

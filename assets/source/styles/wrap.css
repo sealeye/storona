@@ -1,0 +1,20 @@
+.wrap {
+	max-width: 1240px;
+	padding: 0 20px;
+	margin: 0 auto;
+	position: relative;
+	&--text {
+		padding-top: 143px;
+		padding-bottom: 200px;
+		h2 {
+			margin-bottom: 60px;
+		}
+		p {
+			padding-right: 250px;
+			font-weight: 300;
+			@media (--tablet) {
+				padding-right: 0;
+			}
+		}
+	}
+}

@@ -1,24 +1,35 @@
 .es_lablebox {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	margin-right: 20px;
 	text-transform: uppercase;
 	margin-left: 16px;
+	font-weight: bold;
+	line-height: 32px;
 }
 .es_textbox {
 	display: inline-block;
 	vertical-align: top;
 	input {
-		background-color: transparent;
-		border: none;
+		background-color: white;
+		border: 1px solid black;
 		height: 30px;
+		padding-left: 15px;
+		border-right: none;
 	}
 }
 .es_button {
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 0 !important;
 	input {
 		height: 30px;
 		text-transform: uppercase;
+		background-color: #000;
+		color: #fff;
+		border: none;
+		&:hover {
+			border: 2px solid white;
+		}
 	}
 }

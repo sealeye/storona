@@ -7,15 +7,20 @@
 
 @import 'typo.css';
 
-@import 'grid.css';
+@import 'wrap.css';
 @import 'header.css';
-@import 'main.css';
+@import 'calendar.css';
+@import 'block.css';
+@import 'card.css';
+@import 'item.css';
+@import 'pagination.css';
 @import 'footer.css';
 @import 'article.css';
 @import 'guide.css';
 @import 'search.css';
 @import 'subscribe.css';
-
-/*
-* Основные стили
-*/
+@import 'magazine.css';
+@import 'slider.css';
+@import 'overlay.css';
+@import 'article-menu.css';
+/*@import 'bxslider.css';*/

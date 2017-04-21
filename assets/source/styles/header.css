@@ -1,150 +1,63 @@
-	header {
-		color: #000;
-		position: fixed;
+	.header {
+		box-shadow: 0 27px 24px rgba(32, 22, 0, 0.2);
+		position: relative;
 		z-index: 100;
 		background-color: #fff;
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 100;
-		.logo {
-			width: 200px;
-			display: inline-block;
+		.wrap {
+			display: flex;
+			justify-content: space-between;
+			height: 119px;
+			align-content: center;
+			align-items: center;
+			position: relative;
+			@media (--mobile) {
+				flex-direction: column;
+				height: 100px;
+			}
+		}
+		&__calendar {
+			@media (--mobile) {
+				display: none;
+			}
+		}
+		&__logo {
 			img {
-				width: 100%;
-				margin-top: 20px;
+				margin-right: 19px;
+				vertical-align: middle;
 			}
-			@media(max-width: 590px) {
-				width: 50%;
-				img {
-					width: 30%;
-				}
-			}
-		}
-		.logo-desc {
+			vertical-align: middle;
+			font-size: 17px;
 			text-transform: uppercase;
-			font-family: $f_Arial;
-			font-size: 12px;
-			font-weight: bold;
-			letter-spacing: 4px;
-			@media(max-width: 590px) {
-				font-size: 6px;
+			color: #000;
+			padding-top: 13px;
+			margin-left: -66px;
+			letter-spacing: 3px;
+			@media (--mobile) {
+				margin: auto;
 			}
 		}
-		nav {
-			margin-top: 22px;
-			margin-bottom: 12px;
-			@media(max-width: 590px) {
-				margin-bottom: 0;
+		&__search {
+			width: 150px;
+			height: 28px;
+			padding-top: 5px;
+			padding-bottom: 6px;
+			box-sizing: border-box;
+			display: flex;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+			@media (--mobile) {
+				display: none;
 			}
-			.main-menu {
-				list-style: none;
-				&__item,
-				.menu-item-has-children {
-					float: left;
-					width: 21vw;
-					border-top: 2px solid black;
-					padding-top: 17px;
-					position: relative;
-					margin-right: 3vw;
-					@media(max-width: 590px) {
-						position: static;
-					}
-					@media(max-width: 590px) {
-						width: 31%;
-						margin-right: 3.5%;
-						padding-top: 7px;
-						padding-bottom: 10px;
-						&:nth-of-type(4) {
-							margin-right: 0;
-						}
-						a {
-							font-size: 8px;
-							letter-spacing: 3px;
-						}
-					}
-					&:hover .sub-menu {
-						display: block;
-					}
-					&:first-child,
-					&:last-child {
-						width: 12.5vw;
-						@media(max-width: 590px) {
-							display: none;
-						}
-					}
-					&:last-child {
-						margin-right: 0;
-					}
-					form {
-						input {
-							border: none;
-							position: relative;
-						}
-						label {
-							text-transform: uppercase;
-							position: absolute;
-							top: 0;
-							left: calc(50% - 40px);
-						}
-						input:focus + label {
-							display: none;
-						}
-						input:invalid + label {
-							display: none;
-						}
-					}
-					a {
-						font-size: 24px;
-						letter-spacing: 7px;
-						color: #000;
-						text-transform: uppercase;
-					}
-					&:first-child .date,
-					form {
-						@mixin helvetica-bold;
-						font-size: 11px;
-						letter-spacing: 3px;
-						position: relative;
-						top: -35px;
-						text-transform: uppercase;
-					}
-					.sub-menu {
-						display: none;
-						position: absolute;
-						top: 0;
-						border-bottom: 1px solid black;
-						background-color: #fff;
-						list-style: none;
-						width: 100%;
-						z-index: 100;
-						@media(max-width: 590px) {
-							width: 100vw;
-							position: fixed;
-							left: 0;
-							top: 155px;
-						}
-						&__item,
-						.menu-item {
-							padding-top: 17px;
-							padding-bottom: 19px;
-							border-top: 2px solid black;
-							text-transform: uppercase;
-							font-size: 14px;
-							letter-spacing: 3px;
-							&:hover {
-								border-top: 4px solid black;
-							}
-							&:first-child {
-								border-top-width: 1px;
-							}
-							a {
-								font-size: 14px;
-								letter-spacing: 3px;
-							}
-						}
-					}
-				}
+		}
+		&__input {
+			border: none;
+			width: calc(100% - 17px);
+			&-submit {
+				background-color: transparent;
+				border: none;
+				width: 17px;
+				height: 17px;
+				background-image: url(../img/search.svg);
+				background-size: cover;
 			}
 		}
 	}

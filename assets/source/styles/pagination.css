@@ -1,0 +1,31 @@
+.pagination {
+	@media (--tablet) {
+		display: none;
+	}
+	&__button {
+		width: 57px;
+		height: 57px;
+		background-image: url(../img/arrow-bottom-search.svg);
+		background-repeat: no-repeat;
+		background-size: 20px 12px;
+		background-position: center center;
+		box-shadow: 0 27px 24px rgba(32, 22, 0, 0.2);
+		background-color: #f6f6f6;
+		margin-top: 35px;
+		margin-bottom: 33px;
+		border-radius: 50%;
+		appearance: none;
+		border: none;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+	}
+	&__link {
+		color: #000;
+		margin-right: 15px;
+		&--prev {}
+		&--next {}
+	}
+}

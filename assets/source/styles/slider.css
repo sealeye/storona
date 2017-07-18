@@ -1,6 +1,7 @@
 .slider-container {
 	position: relative;
 	text-align: center;
+  width: 100%;
 }
 .slider {
 	margin-top: 60px;
@@ -34,7 +35,8 @@
 		opacity: 1;
 		z-index: 2;
 	}
-	&__button {
+	&__button{
+    cursor: pointer;
 		width: 94px;
 		height: 94px;
 		background-image: url(../img/arrow-bottom-search.svg);
@@ -54,7 +56,7 @@
 			transform: rotate(90deg)  translateX(-50%);
 			left: 0;
 		}
-		&--next {
+		&--next{
 			box-shadow: -27px 0px 24px rgba(32, 22, 0, 0.2);
 			transform: rotate(-90deg)  translateX(50%);
 			right: 0;

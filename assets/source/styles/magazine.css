@@ -6,9 +6,11 @@
 	&__item {
 		max-width: 32.1%;
 		box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
 		img {
 			display: block;
 			width: 100%;
 		}
 	}
 }
+

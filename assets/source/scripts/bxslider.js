@@ -1,12 +1,22 @@
-$('.bxslider').bxSlider({
-	minSlides: 1,
-	maxSlides: 3,
-	moveSlides: 1,
-	slideWidth: 270,
-	slideMargin: 50,
-	nextSelector: '#slider-next',
-	prevSelector: '#slider-prev',
-	pager: false,
-	nextText: '',
-	prevText: ''
+//$(document).ready(function(){
+//  $(".owl-carousel").owlCarousel();
+//});
+
+$('.owl-carousel-2').owlCarousel({
+  loop: true,
+  margin: 70,
+  nav: true,
+  items: 3,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 3
+    }
+  }
 });
+

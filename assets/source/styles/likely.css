@@ -1,0 +1,17 @@
+.likely {
+  display: inline-block;
+  margin-left: 60px;
+  @media(--mobile){
+    margin-left: 20px;
+  }
+}
+.likely__icon {
+  display: none;
+}
+.likely__counter {}
+.likely__widget {
+  margin-right: 85px;
+  @media(--mobile){
+    margin-right: 15px;  
+  }
+}

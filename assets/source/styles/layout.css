@@ -8,6 +8,7 @@
 @import 'typo.css';
 
 @import 'wrap.css';
+@import 'sub-menu.css';
 @import 'header.css';
 @import 'calendar.css';
 @import 'block.css';
@@ -23,4 +24,6 @@
 @import 'slider.css';
 @import 'overlay.css';
 @import 'article-menu.css';
+@import 'likely.css';
+@import 'owl.carousel.css';
 /*@import 'bxslider.css';*/

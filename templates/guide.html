@@ -1,231 +1,209 @@
 <!DOCTYPE html>
-<html>
-  <include src="blocks/head.html" title="Сторона"></include>
-  <body class="guide stage">
-  			<style>
-				xmp {
-					display: block;
-					border: 1px solid #ddd;
-					border-radius: 3px;
-					padding: 0.4rem 0.5rem;
-					font-size: 15px;
-					line-height: 18px;
-					white-space: pre-wrap;
-					word-break: break-word;
-					text-align: left;
-					margin-top: 15px;
-					margin-bottom: 20px;
-					margin-left: 50px;
-					margin-right: 50px;
-				}
-			</style>
-<div class="guide__header">
-	Стили для статьи
-</div>
+<html data-livestyle-extension="available">
 
-<main class="wrapper">
+<head>
+  <title>Сторона</title>
+  <meta charset="utf-8">
+  <meta content="width=1600px" name="viewport">
+  <meta name="viewport" content="width=device-width">
 
-<p class="guide">Каждый раздел сайта это <mark>block</mark>. Внутрь кладутся картинки, заголовки, текст. </p>
-<xmp><div class="block">
- <p class="block__text">Текст</p>
-</div></xmp>
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
 
-<h1>Оформление</h1>
+<body class="guide stage">
+  <style>
+    xmp {
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 0.4rem 0.5rem;
+      font-size: 15px;
+      line-height: 18px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      text-align: left;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .wrapper{
+      max-width: 1250px;
+    }
 
-<p class="guide">Добавляя определённые модификаторы к <mark>block</mark> можно изменять параметры:</p>
+  </style>
 
-<h2>Тип шрифта</h2>
-<p class="guide">К <mark>block</mark> добавляется класс <mark>block--helvetica</mark> или <mark>block--georgia</mark>.</p>
-<xmp><div class="block block--helvetica"></xmp>
+  <div class="guide__header">
+    Инструкция по использованию
+  </div>
 
-<h2>Рамки</h2>
-<ul>
-	<li><mark>block--top-half-border</mark> - рамка сверху не до конца </li>
-	<li><mark>block--top-border</mark> - рамка сверху</li>
-	<li><mark>block--bottom-border</mark> - рамка снизу</li>
-</ul>
-<xmp><div class="block block--top-border block--bottom-border"></xmp>
+  <main class="wrapper">
 
-<h2>Цвет фона</h2>
+    <h2>Вход</h2>
 
-<ul>
-	<li><mark>block--okhra</mark> </li>
-	<li><mark>block--lazur</mark></li>
-	<li><mark>block--purpur</mark></li>
-</ul>
-<xmp><div class="block block--georgia block--purpur"></xmp>
+    <p class="guide">
 
-<hr>
+      Страница для входа —
+      <mark>http://muzstorona.ru/wp-admin</mark>
+      <br> Логин —
+      <mark>storona</mark>
+      <br> Пароль —
+      <mark>gdPx7eKKBNyDMON$Kn</mark>
 
-<h1>Внутренние элементы</h1>
+    </p>
 
-<h2>Текст</h2>
+    <p class="guide">
+      Можно входить через социальные сети. Но роль такого нового пользователя не позволяет ничего редактировать. Чтобы дать права новому пользователю нужно зайти из под учётной записи
+      <mark>storona</mark> в меню
+      <mark>Пользователи</mark> выбрать нужного и в списке
+      <mark>Роль</mark> выбрать
+      <mark>Редактор</mark>. Теперь человек, который будет заходить через эту учётную запись может создавать записи.
+    </p>
+
+    <img src="assets/img/role.png" alt="" class="guide">
+
+    <hr>
+
+    <h2>Создание записи</h2>
+
+    <p class="guide">Меню
+      <mark>Записи</mark> и далее
+      <mark> Добавить новую</mark>
+    </p>
+
+    <img src="assets/img/add.png" alt="" class="guide">
+
+    <p class="guide">
+      После задания заголовка можно задать ссылку на страницу, это поле появится под заголовком. Желательно на латинице.
+    </p>
+
+    <img src="assets/img/url.png" alt="" class="guide">
+
+    <p class="guide">
+      Первым делом выбрираем рубрику, от этого зависят поля, которые нужно будет заполнить.
+    </p>
+
+    <img src="assets/img/rubric.png" alt="" class="guide">
+
+    <p class="guide">
+      Если это статья, то появится шаблон заполнения шапки статьи. Там задаётся заголовок и фоновая каринка.
+    </p>
+
+    <p class="guide">
+      Ниже редактор, куда нужно будет вставлять блоки. Об этом подробнее в разделе <a href="#styles">Стили для статьи</a>. Важно, чтобы всегда редактор был в режиме
+      <mark>Текст</mark>.
+    </p>
+
+    <img src="assets/img/redactor.png" alt="" class="guide">
+
+    <h2>Вставка из сторонних ресурсов</h2>
+
+    <p class="guide">
+      Можно вставлять видео или аудио из любого источника, где есть возможность вставки на сторонний сайт. Чаще всего это кнопки
+      <mark>share</mark> и внутри
+      <mark>embed</mark>.
+    </p>
 
 
-<xmp><p class="block__text">Текст</p></xmp>
-	
-	<h2>Ссылка</h2>
-	
-	<xmp><a href="ссылка" class="block__link">Ссылка</a></xmp>
+    <p class="guide">
+      У любой сссылки такого вида будут два параметра
+      <mark>width</mark> — ширина и
+      <mark>height</mark> — высота. Их значения можно менять. Значения в пикселях.
+    </p>
 
-<h2>Картинка</h2>
+    <img src="assets/img/soundcloud.png" alt="" class="guide">
+    <img src="assets/img/vimeo.png" alt="" class="guide">
+    <img src="assets/img/youtube.png" alt="" class="guide">
 
-<xmp><div class="block__img-wrap">
- <img src="assets/img/flamingo-small.jpg" alt="" class="block__img">
-</div></xmp>
+    <p class="guide">
+      Чтобы вставлять из vk, нужно завести отдельную группу, где на стене будут создаваться посты с подобрками аудио. Далле при клике на
+      <mark>Поделиться</mark> выбираем
+      <mark>Экспортировать</mark> и копируем ссылку в нужное место страницы.
+    </p>
+    <img src="assets/img/vk.jpg" alt="" class="guide">
 
-<h2>Картинка с затемнением и заголовком</h2>
 
-<xmp><div class="block__img-wrap block__img-wrap--fade">
-	<img src="ссылка на картинку" alt="" class="block__img--big">
-	<div class="block__img-heading">Заголовок</div>
-</div></xmp>
+    <h2>Оформление превью</h2>
 
-<hr>
+    <p class="guide">
+      <mark>Тип превью</mark> — это то, что будет отображаться в карточке на главной странице.
+      <br>
+      <mark>Черное</mark> — полупрозрачный черный фон и белая крупная надпись;
+      <br>
+      <mark>Белыое</mark> — белый фон и черный мелкий текст;
+      <br>
 
-<h1>Шрифт:</h1>
+      <mark>Нет</mark> —отсутствие надписи на превью.
+    </p>
 
-		<h2>Georgia</h2>
-		
-		<p class="guide"><mark>block--georgia</mark></p>
-		
-				<div class="block block--georgia block--top-half-border">
-			<p class="block__text">
-				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
-			</p>
+    <h2>Публикация</h2>
+
+    <p class="guide">Чтобы запись стала доступа для читателя нужно нажать
+      <mark>Опубликовать</mark>. Если просто нажать
+      <mark>Сохранить</mark>, то запись останется в черновиках, но её можно посмотерть нажав
+      <mark>Просмотреть</mark>. Если нажать на календарь, то можно выбрать дату публикации.</p>
+    <img src="assets/img/public.png" alt="" class="guide">
+    <hr>
+
+  </main>
+
+  <div class="guide__header" id="styles">
+    Стили для статьи
+  </div>
+
+  <main class="wrapper">
+
+  <h1>Текст</h1>
+  <xmp><p>Текст</p></xmp>
+  
+  <h1>Текст с фотографией</h1>
+  <xmp><div>
+          <img src="assets/img/nadya.jpg" alt="" class="fl-l">
+          <p> Текст</p>
+        </div></xmp>
+        
+       <p class="guide"><mark>fl-l</mark> у картинки это выравнивание слева</p> 
+        <p class="guide"><mark>fl-r</mark> у картинки это выравнивание справа</p> 
+        
+        <h1>Картинка без текста по центру</h1>
+        <xmp><p class=“center”><img></p></xmp>
+        
+        <h1>Ссылка</h1>
+        <xmp><a href="#">Ссылка</a></xmp>
+        <p class="guide">в <mark>href</mark> вставляется адрес</p>
+
+<h1>Цитата</h1>
+  
+  <xmp><blockquote>Цитата
+          <cite>Автор цитаты</cite>
+        </blockquote></xmp>
+        
+    <h1>Слайдер</h1>
+    
+   <p class="guide"> <mark> ОБЯЗАТЕЛЬНО ВЫБИРИТЕ РУБРИКУ ГАЛЛЕРЕЯ</mark> </p> 
+    
+    <xmp><div class="slider-container magazines">
+			<ul class="slider">
+				<li>
+					<a href="#" class="slider__item showing">
+						<img src="#" />
+					</a>
+				</li>		
+				...
+			</ul>
+			<button class="slider__button slider__button--prev" id="previous"></button>
+			<button class="slider__button slider__button--next" id="next"></button>
 		</div>
-		
-		<xmp><div class="block block--georgia block--top-half-border">
-			<p class="block__text">Текст</p>
-		</div></xmp>
-		
-		<h2>Helvetica</h2>
-	
-			<p class="guide"><mark>block--helvetica</mark></p>
-			
-				<div class="block block--helvetica block--top-border block--bottom-border">
-			<p class="block__text">
-				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
-			</p>
-		</div>
-		
-			<xmp><div class="block block--helvetica block--top-border block--bottom-border">
-			<p class="block__text">Текст</p>
-		</div></xmp>	
-		
-		<hr>
-		
-		<h1>Элементы страницы</h1>
-		
-		<h2>Ссылка</h2>
-		
-		<p class="guide">Обязательно <mark>block--link</mark></p>
-		
-				<div class="block block--link">
-			<p class="block__text">Далеко-далеко за словесными горами </p>
-			<a href="ссылка" class="block__link">“в стране гласных и согласных”</a>
-		</div>
-		
-		<xmp><div class="block block--link">
-			<p class="block__text">Далеко-далеко за словесными горами </p>
-			<a href="" class="block__link">“в стране гласных и согласных”</a>
-		</div></xmp>
-		
-		<h2>Блок с одной фотографией</h2>
-		
-				<p class="guide">Обязательно <mark>block--image</mark></p>
-		
-				<div class="block block--image block--georgia block--okhra">
-			<div class="block__img-wrap">
-				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img">
-			</div>
-			<p class="block__text">
-				Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель
-			</p>
-		</div>
-		
-		<xmp><div class="block block--image block--georgia block--okhra">
-			<div class="block__img-wrap">
-				<img src="ссылка на картинку" alt="" class="block__img">
-			</div>
-			<p class="block__text">Текст</p>
-		</div></xmp>
-		
-		<h2>Блок с двумя фотографиями</h2>
-		
-		<p class="guide">Обязательно <mark>block--two-images</mark> для блока. Внутри <mark>block__right-text</mark> для текста справа</p>
-		
-				<div class="block block--two-images block--helvetica block--lazur">
-			<div class="block__img-wrap block__img-wrap--fade">
-				<img src="assets/img/flamingo.jpg" alt="" class="block__img">
-			</div>
-						<div class="block__img-wrap">
-				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img">
-			</div>
-			<div class="block__right-text">
-			<p class="block__text">Далеко-далеко</p>
-			<a href="" class="block__link">“в стране гласных и согласных”</a>
-		</div>	
-		</div>
-		
-	<xmp><div class="block block--two-images block--helvetica block--lazur">
-			<div class="block__img-wrap block__img-wrap--fade">
-				<img src="assets/img/flamingo.jpg" alt="" class="block__img">
-			</div>
-						<div class="block__img-wrap">
-				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img">
-			</div>
-			<div class="block__right-text">
-			<p class="block__text">Текст</p>
-			<a href="" class="block__link">Ссылка</a>
-		</div>	
-		</div></xmp>
-		
-				<h2>Блок с большой фотографией</h2>
-				
-				<p class="guide">Обязательно <mark>block--big-image</mark></p>
-				
-						<div class="block block--big-image block--georgia block--purpur">
-			<div class="block__img-wrap block__img-wrap--fade">
-				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img--big">
-				<div class="block__img-heading">Далеко-далеко за словесными горами
-				</div>
-			</div>
-			<p class="block__text">
-				Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель
-			</p>
-		</div>
-			
-			<xmp><div class="block block--big-image block--georgia block--purpur">
-			<div class="block__img-wrap block__img-wrap--fade">
-				<img src="assets/img/flamingo-small.jpg" alt="" class="block__img--big">
-				<div class="block__img-heading">Заголовок</div>
-			</div>
-			<p class="block__text">Текст</p>
-		</div></xmp>
-				
-						<h2>Блок с плеером</h2>
-						
-						<p class="guide">Обязательно <mark>block--music</mark></p>
-						
-								<div class="block block--music block--georgia">
-			<p class="block__text">
-				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
-			</p>
-			<div class="music-plagin">
-						<img src="assets/img/flamingo.jpg" alt="">
-			</div>
-		</div>
-		
-		<xmp>		<div class="block block--music block--georgia">
-			<p class="block__text">Текст</p>
-			<div class="music-plagin">
-						<img src="assets/img/flamingo.jpg" alt="">
-			</div>
-		</div></xmp>
-	
-</main>
+</xmp>
+  
+  <p class="guide"><mark>li</mark> можно вставлять сколько угодно внутрь <mark>ul</mark</p>
+  <p class="guide">внутрь всегда вставляется <mark>a c img внутри</mark></p>
+
+  </main>
 
 
-  </body>
+
+
+</body>
+
 </html>

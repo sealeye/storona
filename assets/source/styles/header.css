@@ -1,63 +1,67 @@
 	.header {
-		box-shadow: 0 27px 24px rgba(32, 22, 0, 0.2);
-		position: relative;
-		z-index: 100;
-		background-color: #fff;
-		.wrap {
-			display: flex;
-			justify-content: space-between;
-			height: 119px;
-			align-content: center;
-			align-items: center;
-			position: relative;
-			@media (--mobile) {
-				flex-direction: column;
-				height: 100px;
-			}
-		}
-		&__calendar {
-			@media (--mobile) {
-				display: none;
-			}
-		}
-		&__logo {
-			img {
-				margin-right: 19px;
-				vertical-align: middle;
-			}
-			vertical-align: middle;
-			font-size: 17px;
-			text-transform: uppercase;
-			color: #000;
-			padding-top: 13px;
-			margin-left: -66px;
-			letter-spacing: 3px;
-			@media (--mobile) {
-				margin: auto;
-			}
-		}
-		&__search {
-			width: 150px;
-			height: 28px;
-			padding-top: 5px;
-			padding-bottom: 6px;
-			box-sizing: border-box;
-			display: flex;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-			@media (--mobile) {
-				display: none;
-			}
-		}
-		&__input {
-			border: none;
-			width: calc(100% - 17px);
-			&-submit {
-				background-color: transparent;
-				border: none;
-				width: 17px;
-				height: 17px;
-				background-image: url(../img/search.svg);
-				background-size: cover;
-			}
-		}
+	  box-shadow: 0 27px 24px rgba(32, 22, 0, 0.2);
+	  position: relative;
+	  z-index: 100;
+	  background-color: #fff;
+	  .wrap {
+	    display: flex;
+	    justify-content: space-between;
+	    height: 119px;
+	    align-content: center;
+	    align-items: center;
+	    position: relative;
+	    @media (--mobile) {
+	      flex-direction: column;
+	      height: 100px;
+	    }
+	  }
+	  &__calendar {
+	    @media (--mobile) {
+	      display: none;
+	    }
+	  }
+	  &__logo {
+	    img {
+	      margin-right: 19px;
+	      vertical-align: middle;
+	      width: 69px;
+	      margin-top: -10px;
+	      display: inline-block;
+	      margin-left: 20px;
+	    }
+	    vertical-align: middle;
+	    font-size: 17px;
+	    text-transform: uppercase;
+	    color: #000 !important;
+	    padding-top: 13px;
+	    margin-left: -66px;
+	    letter-spacing: 3px;
+	    @media (--mobile) {
+	      margin: auto;
+	    }
+	  }
+	  &__search {
+	    width: 150px;
+	    height: 28px;
+	    padding-top: 5px;
+	    padding-bottom: 6px;
+	    box-sizing: border-box;
+	    display: flex;
+	    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	    @media (--mobile) {
+	      display: none;
+	    }
+	  }
+	  &__input {
+	    border: none;
+	    width: calc(100% - 17px);
+	    &-submit {
+	      background-color: transparent;
+	      border: none;
+	      width: 17px;
+	      height: 17px;
+	      background-image: url(../img/search.svg);
+	      background-size: cover;
+	    }
+	  }
 	}

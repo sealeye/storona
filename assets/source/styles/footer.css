@@ -1,21 +1,29 @@
 .footer {
 	background-color: #f7f7f7;
 	box-shadow: 0 -27px 50px rgba(32, 22, 0, 0.2);
-/*	margin-top: 170px;*/
+	/*	margin-top: 170px;*/
 	height: 178px;
 	padding: 12px 0;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+  z-index: 100;
 	@media (--mobile) {
 		height: auto;
+		position: static;
 	}
 	.wrap {
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+    @media(--mobile) {
+      padding: 20px;
+    }
 	}
 	a,
 	p {
-		color: #000;
+		color: #000 !important;
 		text-transform: uppercase;
 		font-size: 12px;
 		line-height: 1;

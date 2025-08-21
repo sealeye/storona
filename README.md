@@ -1,39 +1,46 @@
-#Инитум
-Шаблон помогает быстро начать вёрстку проекта.
+# Initum
+The template helps you quickly start layout development for a project.
 
-Перед первым запуском:
+Before the first run:
+
 ```bash
 sudo npm install
 ```
 
-##Режимы
-Одноразовая сборка:
+## Modes
+One-time build:
+
 ```bash
 gulp
 ```
 
-Запуск живой сборки на локальном сервере:
+Start live build on a local server:
+
 ```bash
 gulp live
 ```
 
-Живая сборка на локальном сервере и туннель в интернет:
+Live build on a local server with an internet tunnel:
+
 ```bash
 gulp external-world
 ```
 
-##Шаблонизация
-Шаблоны собираются в папке `templates` с помощью тегов `<include>`. Составные части лежат в `blocks`. Переменные — через `@@var` (см. [gulp-html-tag-include](https://github.com/straykov/gulp-html-tag-include)). Боевые файлы автоматически собираются в корне проекта.
+## Templating
+Templates are built in the `templates` folder using `<include>` tags. Components are located in `blocks`. Variables are used via `@@var` (see [gulp-html-tag-include](https://github.com/straykov/gulp-html-tag-include)). Production files are automatically compiled into the project root.
 
-##Стили
-Верстаются в `assets/source/styles/layout.css`, компилируются в `assets/css/style.css`.
+## Styles
+Styles are written in `assets/source/styles/layout.css`, compiled to `assets/css/style.css`.
 
-####PostCSS
-Переменные ([postcss-simple-vars](https://github.com/postcss/postcss-simple-vars)):
+#### PostCSS
+Variables ([postcss-simple-vars](https://github.com/postcss/postcss-simple-vars)):
+
 ```css
 $f_Helvetica: "Helvetica Neue", Arial, sans-serif;
 ```
-Вложенность ([postcss-nested](https://github.com/postcss/postcss-nested)) для элементов в БЭМе:
+
+Nesting ([postcss-nested](https://github.com/postcss/postcss-nested)) for BEM elements:
+
 ```css
 .block {
   ...
@@ -43,7 +50,6 @@ $f_Helvetica: "Helvetica Neue", Arial, sans-serif;
   }
 }
 ```
-[CSSNext](http://cssnext.io). Штуки из CSS 4, префиксы, кастомные медиа-запросы.
 
---
-Используется в проектах [Кодельной](http://code.straykov.ru) <img src="http://code.straykov.ru/assets/img/logo.svg" height="19">
+[CSSNext](http://cssnext.io): Features from CSS 4, prefixes, custom media queries.
+
